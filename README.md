@@ -1,6 +1,6 @@
 # Indonesian News Search Engine
 
-Program search engine ini menggunakan dataset yang menggabungkan informasi dari tujuh platform berita Indonesia terkemuka: 
+This search engine program uses a dataset that combines information from seven leading Indonesian news platforms:
 
 - Tempo
 - CNN Indonesia
@@ -10,47 +10,47 @@ Program search engine ini menggunakan dataset yang menggabungkan informasi dari 
 - Kumparan
 - JawaPos
 
-Search engine ini dibangun dengan teknik **word2vec** menggunakan 100 dimensi embeddings untuk menghasilkan pencarian yang lebih relevan dan semantik. Dengan menggunakan teknik ini, sistem dapat memahami hubungan semantik antar kata, sehingga menghasilkan hasil pencarian yang lebih tepat berdasarkan konteks dan kesamaan makna, bukan hanya kecocokan kata kunci secara harfiah.
+The search engine is built using the **word2vec** technique with 100-dimensional embeddings to produce more relevant and semantic search results. By utilizing this technique, the system can understand semantic relationships between words, providing search results that are more contextually accurate based on meaning, rather than just exact keyword matches.
 
-## Fitur Utama
-- **Dataset**: Menggunakan informasi terkini dari tujuh platform berita Indonesia.
-- **Word2Vec Embeddings**: Menerapkan model **word2vec** dengan dimensi 100 untuk menghasilkan representasi kata dalam bentuk vektor yang lebih semantik.
-- **Pencarian Relevan**: Menyediakan hasil pencarian berdasarkan kedekatan semantik, bukan hanya kecocokan kata.
-- **User-Friendly**: Antarmuka yang mudah digunakan untuk mencari berita berdasarkan kata kunci.
+## Key Features
+- **Dataset**: Uses up-to-date information from seven Indonesian news platforms.
+- **Word2Vec Embeddings**: Implements the **word2vec** model with 100 dimensions to create word representations in vector form that capture semantic meaning.
+- **Relevant Search**: Delivers search results based on semantic similarity, not just keyword matching.
+- **User-Friendly**: Easy-to-use interface to search for news articles based on keywords.
 
-## Cara Menggunakan
-1. Masukkan kata kunci pencarian pada kolom yang tersedia di halaman utama.
-2. Klik tombol **Search** untuk mendapatkan hasil pencarian.
-3. Hasil pencarian akan menampilkan judul, URL, dan tingkat kemiripan setiap artikel dengan kata kunci yang dimasukkan.
+## How to Use
+1. Enter a search keyword in the available search box on the homepage.
+2. Click the **Search** button to retrieve search results.
+3. The search results will display the title, URL, and similarity score of each article to the input keyword.
 
-## Teknologi yang Digunakan
-- **Python**: Bahasa pemrograman utama untuk backend.
-- **Flask**: Framework untuk membuat aplikasi web.
-- **Word2Vec**: Untuk menghasilkan embedding kata berbasis konteks.
-- **Pandas**: Untuk pengolahan data dan manipulasi dataset.
-- **Sklearn**: Untuk mengukur kemiripan antara dokumen menggunakan cosine similarity.
+## Technologies Used
+- **Python**: The primary programming language for the backend.
+- **Flask**: Framework used to build the web application.
+- **Word2Vec**: To generate word embeddings based on context.
+- **Pandas**: For data processing and dataset manipulation.
+- **Sklearn**: For measuring document similarity using cosine similarity.
 
-## Instalasi dan Pengaturan
-1. **Clone repository**:
+## Installation and Setup
+1. **Clone the repository**:
     ```bash
     git clone https://github.com/username/repository-name.git
     cd repository-name
     ```
 
-2. **Install dependensi**:
+2. **Install dependencies**:
     ```bash
     pip install -r requirements.txt
     ```
 
-3. **Jalankan aplikasi**:
+3. **Run the application**:
     ```bash
     python main.py
     ```
 
-4. Buka aplikasi di browser Anda di `http://127.0.0.1:5000`.
+4. Open the application in your browser at `http://127.0.0.1:5000`.
 
-## Kontribusi
-Jika Anda ingin berkontribusi pada proyek ini, Anda dapat melakukan **fork** repository ini, kemudian mengirimkan **pull request** dengan perubahan atau fitur baru yang ingin Anda tambahkan.
+## Contributing
+If you want to contribute to this project, you can **fork** this repository and then submit a **pull request** with any changes or new features you would like to add.
 
-## Lisensi
-Proyek ini dilisensikan di bawah lisensi MIT. Lihat [LICENSE](LICENSE) untuk informasi lebih lanjut.
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
