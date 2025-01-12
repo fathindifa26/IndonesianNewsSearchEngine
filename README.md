@@ -21,7 +21,7 @@ The search engine is built using the **word2vec** technique with 100-dimensional
 ## Screenshot Demo
 Here is a screenshot of the search engine interface:
 
-![Search Engine Demo](assets/Screenshot 2025-01-12 at 17.10.32)
+![Search Engine Demo](assets/Screenshot 2025-01-12 at 17.10.32.png)
 
 ## How to Use
 1. Enter a search keyword in the available search box on the homepage.
