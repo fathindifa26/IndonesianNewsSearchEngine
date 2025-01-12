@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Search</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Indonesian News Search</h1>
+
+        <!-- Teks penjelasan tentang search engine -->
+        <p class="description">
+            Program search engine ini menggunakan dataset yang menggabungkan informasi dari tujuh platform berita Indonesia terkemuka: Tempo, CNN Indonesia, CNBC Indonesia, Okezone, Suara, Kumparan, dan JawaPos.<br><br>
+            Search engine ini dibangun dengan teknik word2vec menggunakan 100 dimensi embeddings untuk menghasilkan pencarian yang lebih relevan dan semantik.
+        </p>
+
+        <form method="POST" action="/search">
+            <label for="query">Search Query:</label>
+            <input type="text" id="query" name="query" required>
+            <button type="submit">Search</button>
+        </form>
+
+        {% if query %}
+        <h2>Results for: "{{ query }}"</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Title</th>
+                    <th>URL</th>
+                    <th>Similarity</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in results %}
+                <tr>
+                    <td>{{ result.no }}</td>
+                    <td>{{ result.title }}</td>
+                    <td><a href="{{ result.url }}" target="_blank">{{ result.url }}</a></td>
+                    <td>{{ result.similarity|round(4) }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% endif %}
+    </div>
+</body>
+</html>
