@@ -13,7 +13,7 @@ This search engine program uses a dataset that combines information from seven l
 The search engine is built using the **word2vec** technique with 100-dimensional embeddings to produce more relevant and semantic search results. By utilizing this technique, the system can understand semantic relationships between words, providing search results that are more contextually accurate based on meaning, rather than just exact keyword matches.
 
 ## Key Features
-- **Dataset**: Uses up-to-date information from seven Indonesian news platforms.
+- **Dataset**:  Uses up-to-date information from the [Indonesian News Dataset](https://www.kaggle.com/datasets/iqbalmaulana/indonesian-news-dataset).
 - **Word2Vec Embeddings**: Implements the **word2vec** model with 100 dimensions to create word representations in vector form that capture semantic meaning.
 - **Relevant Search**: Delivers search results based on semantic similarity, not just keyword matching.
 - **User-Friendly**: Easy-to-use interface to search for news articles based on keywords.
