@@ -18,6 +18,11 @@ The search engine is built using the **word2vec** technique with 100-dimensional
 - **Relevant Search**: Delivers search results based on semantic similarity, not just keyword matching.
 - **User-Friendly**: Easy-to-use interface to search for news articles based on keywords.
 
+## Screenshot Demo
+Here is a screenshot of the search engine interface:
+
+![Search Engine Demo](assets/Screenshot 2025-01-12 at 17.10.32)
+
 ## How to Use
 1. Enter a search keyword in the available search box on the homepage.
 2. Click the **Search** button to retrieve search results.
