@@ -54,6 +54,9 @@ Here is a screenshot of the search engine interface:
 
 4. Open the application in your browser at `http://127.0.0.1:5000`.
 
+## Experiments
+For detailed experiments and model architecture, refer to [notebooks/search_engine_experiments.ipynb](notebooks/search_engine_experiments.ipynb).
+
 ## Contributing
 If you want to contribute to this project, you can **fork** this repository and then submit a **pull request** with any changes or new features you would like to add.
 
