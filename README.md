@@ -38,8 +38,8 @@ Here is a screenshot of the search engine interface:
 ## Installation and Setup
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/username/repository-name.git
-    cd repository-name
+    git clone https://github.com/username/repository-name.git](https://github.com/fathindifa26/IndonesianNewsSearchEngine.git
+    cd IndonesianNewsSearchEngine
     ```
 
 2. **Install dependencies**:
